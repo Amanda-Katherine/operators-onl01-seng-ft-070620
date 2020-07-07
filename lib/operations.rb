@@ -1,4 +1,4 @@
-require 'pry'
+#require 'pry'
 
 def unsafe?(speed)
 	if speed < 40
@@ -13,5 +13,6 @@ end
 
 
 def not_safe?(speed)
-	binding.pry
+	((speed > 60) || (speed <40)) ? true : false
+	#binding.pry
 end
